@@ -3,6 +3,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/netfacec/public_html/smiles
     - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH 
     - /bin/cp style.css $DEPLOYPATH
     - /bin/cp -R images $DEPLOYPATH
     - /bin/cp -R fonts $DEPLOYPATH
